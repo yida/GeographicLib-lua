@@ -1,7 +1,7 @@
 GeographicLib-lua
 =================
 
-Lua Interface for GeographicLib (http://geographiclib.sourceforge.net/)
+Lua Interface for GeographicLib (http://geographiclib.sourceforge.net/) 1.30
 
 Implemented:
 
