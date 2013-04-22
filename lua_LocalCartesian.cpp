@@ -106,13 +106,13 @@ static int lua_LocalCartesian_Reverse(lua_State *L) {
   return 1;
 }
 
-static const struct luaL_reg LocalCartesian_Methods [] = {
+static const luaL_Reg LocalCartesian_Methods [] = {
   {"Forward", lua_LocalCartesian_Forward},
   {"Reverse", lua_LocalCartesian_Reverse},
   {NULL, NULL}
 };
 
-static const struct luaL_reg LocalCartesian_Functions [] = {
+static const luaL_Reg LocalCartesian_Functions [] = {
   {"new", lua_LocalCartesian_new},
   {NULL, NULL}
 };

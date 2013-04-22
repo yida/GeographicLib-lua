@@ -16,7 +16,6 @@
 using namespace std;
 using namespace GeographicLib;
 
-
 static int lua_Constants_WGS84_a(lua_State *L) {
   try {
     double a = Constants::WGS84_a();
@@ -39,11 +38,11 @@ static int lua_Constants_WGS84_f(lua_State *L) {
   return 1;
 }
 
-static const struct luaL_reg Constants_Methods [] = {
+static const luaL_Reg Constants_Methods [] = {
   {NULL, NULL}
 };
 
-static const struct luaL_reg Constants_Functions [] = {
+static const luaL_Reg Constants_Functions [] = {
   {"WGS84_a", lua_Constants_WGS84_a},
   {"WGS84_f", lua_Constants_WGS84_f},
   {NULL, NULL}

@@ -104,13 +104,13 @@ static int lua_Geocentric_Reverse(lua_State *L) {
   return 1;
 }
 
-static const struct luaL_reg Geocentric_Methods [] = {
+static const luaL_Reg Geocentric_Methods [] = {
   {"Forward", lua_Geocentric_Forward},
   {"Reverse", lua_Geocentric_Reverse},
   {NULL, NULL}
 };
 
-static const struct luaL_reg Geocentric_Functions [] = {
+static const luaL_Reg Geocentric_Functions [] = {
   {"new", lua_Geocentric_new},
   {NULL, NULL}
 };
